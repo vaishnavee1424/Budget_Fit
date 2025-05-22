@@ -1,0 +1,26 @@
+.custom-tooltip {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #D1D5DB; /* Tailwind's gray-300 */
+  }
+  
+  .custom-tooltip-title {
+    font-size: 0.75rem; /* text-xs */
+    font-weight: 600; /* font-semibold */
+    color: #6B21A8; /* Tailwind's purple-800 */
+    margin-bottom: 0.25rem; /* mb-1 */
+  }
+  
+  .custom-tooltip-text {
+    font-size: 0.875rem; /* text-sm */
+    color: #4B5563; /* gray-600 */
+  }
+  
+  .custom-tooltip-amount {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #111827; /* gray-900 */
+  }
+  

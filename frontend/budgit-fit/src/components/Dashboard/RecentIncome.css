@@ -1,0 +1,55 @@
+.recent-income-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(203, 213, 225, 0.5);
+  height: 100%;
+  width: 100%;
+}
+
+.recent-income-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.recent-income-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.recent-income-btn {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #6366f1;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 0.3rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.recent-income-btn:hover {
+  color: #4f46e5;
+}
+
+.recent-income-icon {
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.recent-income-btn:hover .recent-income-icon {
+  transform: translateX(2px);
+}
+
+.recent-income-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

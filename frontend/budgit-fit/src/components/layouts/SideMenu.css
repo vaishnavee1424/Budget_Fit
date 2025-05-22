@@ -1,0 +1,83 @@
+.side-menu-wrapper {
+    width: 16rem;
+    height: calc(100vh - 61px);
+    background: linear-gradient(to bottom, #ffffff, #f5f9ff);
+    border-right: 1px solid #e1e8f5;
+    padding: 1.5rem 1rem;
+    position: sticky;
+    top: 61px;
+    z-index: 20;
+}
+
+.user-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1rem 0 2rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e1e8f5;
+}
+
+.user-avatar {
+    width: 6rem;
+    height: 6rem;
+    background: linear-gradient(135deg, #7AC6D2, #B5FCCD);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.user-name {
+    color: #3A59D1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.menu-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    padding: 0.85rem 1.5rem;
+    border-radius: 0.6rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    color: #4a5d8a;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: #f0f5ff;
+    color: #3A59D1;
+}
+
+.menu-button.active {
+    background: linear-gradient(to right, #3A59D1, #3D90D7);
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(58, 89, 209, 0.2);
+}
+
+.menu-button.active:hover {
+    background: linear-gradient(to right, #2e49b8, #3580c2);
+}
+
+.menu-icon {
+    font-size: 1.3rem;
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+}

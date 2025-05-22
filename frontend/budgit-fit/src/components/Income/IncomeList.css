@@ -1,0 +1,49 @@
+.income-list-card {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .download-btn {
+    background-color: #9333ea;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .download-btn:hover {
+    background-color: #7e28b1;
+  }
+  
+  .download-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .transaction-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .transaction-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

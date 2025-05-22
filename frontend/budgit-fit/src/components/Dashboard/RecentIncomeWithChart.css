@@ -1,0 +1,60 @@
+  .recent-income-chart-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(229, 231, 235, 0.5);
+    margin-bottom: 1.5rem;
+    height: 100%;
+  }
+  
+  .recent-income-chart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  
+  .recent-income-chart-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1e293b;
+  }
+  
+  .chart-container {
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .no-data-message {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.875rem;
+  }
+  
+  @media (max-width: 768px) {
+    .recent-income-chart-card {
+      padding: 1.25rem;
+    }
+    
+    .chart-container {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .recent-income-chart-card {
+      padding: 1rem;
+    }
+    
+    .chart-container {
+      height: 200px;
+    }
+    
+    .recent-income-chart-title {
+      font-size: 1rem;
+    }
+  }

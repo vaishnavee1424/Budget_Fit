@@ -1,0 +1,27 @@
+.custom-legend-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    column-gap: 1.5rem; /* same as Tailwind's space-x-6 */
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+  
+  .legend-dot {
+    width: 10px; /* 2.5 in Tailwind (2.5 * 4 = 10px) */
+    height: 10px;
+    border-radius: 9999px;
+  }
+  
+  .legend-label {
+    font-size: 0.75rem; /* text-xs */
+    font-weight: 500; /* medium */
+    color: #374151;   /* Tailwind's text-gray-700 */
+  }
+  

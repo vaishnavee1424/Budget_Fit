@@ -1,0 +1,45 @@
+
+
+  .bar-chart-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.custom-tooltip {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(229, 231, 235, 0.5);
+}
+
+.tooltip-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #6366f1;
+    margin-bottom: 0.5rem;
+}
+
+.tooltip-amount {
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+.tooltip-value {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+@media (max-width: 768px) {
+    .bar-chart-container {
+        padding: 1rem;
+    }
+    
+    .custom-tooltip {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+}
+  

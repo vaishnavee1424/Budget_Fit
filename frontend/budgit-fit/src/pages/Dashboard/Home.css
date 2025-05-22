@@ -1,0 +1,92 @@
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 1.25rem auto;
+    padding: 0 1rem;
+    background-color: #f8faff; /* Very light blue background */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(58, 89, 209, 0.08); /* Soft blue shadow */
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cardGrid > div {
+    background: white;
+    border: 1px solid #f4f7fa; /* Primary blue border */
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.cardGrid > div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(58, 89, 209, 0.12);
+    border-color: #f8f9fb; /* Darker blue on hover */
+}
+
+.recentGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    min-height: 100px;
+    background: linear-gradient(to right, #f6fbff, #f0f9ff); /* Subtle gradient */
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid #f2f5f5; /* Teal accent border */
+}
+
+.recentGrid > div {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 6px rgba(58, 89, 209, 0.05);
+}
+
+@media (min-width: 768px) {
+    .cardGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .recentGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .recentGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .recentGrid > div:nth-child(1),
+    .recentGrid > div:nth-child(2) {
+        grid-column: span 1;
+        border-right: 2px solid #f1f6f3; /* Light teal divider */
+        padding-right: 1.5rem;
+    }
+    
+    .recentGrid > div:nth-child(3) {
+        grid-column: span 2;
+        background-color: #f6fcff;
+        border-top: 2px solid #edf1ee;
+        margin-top: 1rem;
+        padding-top: 1.5rem;
+        position: relative;
+    }
+    
+    .recentGrid > div:nth-child(3)::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(to right, #f4f4f8, #edf1f3); /* Brand gradient accent */
+    }
+}

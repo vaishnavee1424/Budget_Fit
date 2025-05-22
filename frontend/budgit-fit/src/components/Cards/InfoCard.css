@@ -1,0 +1,105 @@
+
+.infoCard {
+    display: flex;
+    gap: 1.25rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(203, 213, 225, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.infoCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.iconWrapper {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.625rem;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+}
+
+.infoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.label {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.value {
+    font-size: 1.5rem;
+    color: #1e293b;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.bg-primary {
+    background-color: #6366f1;
+}
+
+.bg-orange-500 {
+    background-color: #f97316;
+}
+
+.bg-red-500 {
+    background-color: #ef4444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .infoCard {
+        padding: 1.25rem;
+        gap: 1rem;
+    }
+    
+    .iconWrapper {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+    
+    .value {
+        font-size: 1.375rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .infoCard {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .infoText {
+        align-items: center;
+    }
+    
+    .label {
+        margin-bottom: 0.25rem;
+    }
+    
+    .value {
+        font-size: 1.25rem;
+    }
+}
