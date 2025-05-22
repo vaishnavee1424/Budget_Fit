@@ -12,11 +12,23 @@ const app = express();
 app.use(express.json());
 
 // CORS middleware with a specific origin
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://budget-fit-1-frontend.onrender.com"
+];
+
 app.use(cors({
-    origin: process.env.CLIENT_URL || "https://budget-fit-1-frontend.onrender.com",  // Set specific origin here
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+  origin: function(origin, callback) {
+    if (!origin) return callback(null, true);  // allow REST clients, Postman etc.
+    if (allowedOrigins.indexOf(origin) === -1) {
+      return callback(new Error("Not allowed by CORS"), false);
+    }
+    callback(null, true);
+  },
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
 }));
+
 
 connectDB();
 
