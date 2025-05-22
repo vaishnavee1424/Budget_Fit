@@ -13,7 +13,7 @@ app.use(express.json());
 
 // CORS middleware with a specific origin
 app.use(cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",  // Set specific origin here
+    origin: process.env.CLIENT_URL || "https://budget-fit-1-frontend.onrender.com",  // Set specific origin here
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
 }));
